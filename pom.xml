@@ -82,11 +82,9 @@
 					<artifactId>maven-assembly-plugin</artifactId>
 					<version>3.8.0</version>
 					<configuration>
-						<!-- Use a predefined descriptor for simplicity -->
 						<descriptorRefs>
 							<descriptorRef>jar-with-dependencies</descriptorRef>
 						</descriptorRefs>
-						<!-- Optional: configure manifest for an executable JAR -->
 						<archive>
 							<manifest>
 								<mainClass>com.steven.App</mainClass>
@@ -96,7 +94,7 @@
 					<executions>
 						<execution>
 							<id>make-assembly</id>
-							<phase>package</phase> <!-- Bind to the package phase -->
+							<phase>package</phase>
 							<goals>
 								<goal>single</goal>
 							</goals>
